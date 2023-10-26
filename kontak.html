@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title> KONTAK</title>
+  <link rel="stylesheet" href="css/kontak.css" />
+ 
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="indeks.html">Trisakti</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="kontak.html">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+  <div class="container">
+
+    <form id="myFrom">
+      <h1 style="width: 100%;
+          text-align: center;margin-bottom: 20px;color: white;">GET IN TOUCH</h1>
+      <div>
+        <label for="input-name">Name</label>
+        <input id="input-name" type="text" required />
+      </div>
+      <div>
+        <label for="input-email">Email</label>
+        <input id="input-email" type="email" required />
+      </div>
+      <div>
+        <label for="phone-number">Phone Number</label>
+        <input type="tel" id="phone-number" required />
+      </div>
+      <div>
+        <label for="input-subject">subject</label>
+        <select name="" id="input-subject">
+          <option class="option-select" value="" hidden>Select</option>
+          <option class="option-select">Teknik informatika</option>
+          <option class="option-select">Sistem Informasi</option>
+          <option class="option-select">Lainnya</option>
+        </select>
+      </div>
+      <div>
+        <label for="input-message">Message</label>
+        <textarea name="" id="input-message" cols="30" rows="10"></textarea>
+      </div>
+      <div class="Sumbit">
+        <button type="button" onclick="submitHandler()">Sumbit</button>
+      </div>
+    </form>
+  </div>
+ 
+  <script src="js/kontak.js"></script>
+</body>
+
+</html>
