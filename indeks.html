@@ -7,7 +7,7 @@
     <title>Trisakti</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="image/puki.jpg" type="icon">
+    
 </head>
 <body>
 
@@ -29,33 +29,31 @@
    
 
     <div class="container mt-4">
-        <h1>Predict student's drop out of the course</h1>
+        <h1 class="text-white">Predict student's drop out of the course</h1>
         <div class="form-group">
-            <label class="font-weight-bold" for="matematika ">Step_id :</label>
-            <input type="number" id="matematika" class="form-control">
+            <label class="font-weight-bold text-white" for="kode ">KODE :</label>
+            <input type="number" id="kode" class="form-control">
         </div>
         <div class="form-group">
-            <label  class="font-weight-bold" for="bahasa">Timestamp</label>
-            <input type="number" id="bahasa" class="form-control">
+            <label  class="font-weight-bold text-white" for="kode">WAKTU</label>
+            <input type="number" id="waktu" class="form-control">
         </div>
         <div class="form-group">
-            <label class="font-weight-bold" for="kimia">pengguna kontol :</label>
-            <input type="number" id="kimia" class="form-control">
+            <label class="font-weight-bold text-white " for="kode">PENGGUNA  :</label>
+            <input type="number" id="pengguna" class="form-control">
         </div>
         <button onclick="tambahNilai()" class="btn btn-primary">Tambahkan</button>
         <div class="hasil mt-4">
-            <h2>Detail Nilai:</h2>
-            <ul id="detailNilai"></ul>
-            <h2>Rata-rata Nilai Lulus:</h2>
-            <div id="rataRataLulus">0%</div>
-            <h2>Rata-rata Nilai Tidak Lulus:</h2>
-            <div id="rataRataTidakLulus">0%</div>
+            <h2 class="text-white">Detail Nilai:</h2>
+            <ul class="text-white" id="detailNilai"></ul>
+            <h2 class="text-white">Rata-rata Nilai Lulus:</h2>
+            <div class="text-white" id="rataRataLulus">0%</div>
+            <h2 class="text-white">Rata-rata Nilai Tidak Lulus:</h2>
+            <div class="text-white" id="rataRataTidakLulus">0%</div>
         </div>
     </div>
 
     <script src="js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </body>
 </html>

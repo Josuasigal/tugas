@@ -2,11 +2,11 @@ let nilaiLulus = [];
 let nilaiTidakLulus = [];
 
 function tambahNilai() {
-    let matematika = parseInt(document.getElementById('matematika').value);
-    let bahasa = parseInt(document.getElementById('bahasa').value);
-    let kimia = parseInt(document.getElementById('kimia').value);
+    let kode = parseInt(document.getElementById('kode').value);
+    let waktu = parseInt(document.getElementById('waktu').value);
+    let pengguna = parseInt(document.getElementById('pengguna').value);
 
-    let rataRata = (matematika + bahasa + kimia) / 3;
+    let rataRata = (kode +waktu + pengguna) / 3;
 
     if (rataRata >= 65) {
         nilaiLulus.push(rataRata);
@@ -17,9 +17,9 @@ function tambahNilai() {
     }
 
     updateRataRata();
-    document.getElementById('matematika').value = '';
-    document.getElementById('bahasa').value = '';
-    document.getElementById('kimia').value = '';
+    document.getElementById('kode').value = '';
+    document.getElementById('waktu').value = '';
+    document.getElementById('pengguna').value = '';
 }
 
 function tambahDetailNilai(rataRata, lulus) {
